@@ -17,7 +17,8 @@ void squareroot();
 void sine();
 void coss();
 void tann();
-//int func(int,int,char);
+void logarithm();
+
 int main() {
     printf("\t\tWelcome to my first scientific calculator\n");
     int choice;
@@ -78,6 +79,9 @@ int main() {
                 break;
             case 13:
                 tann();
+                break;
+            case 14:
+                logarithm();
                 break;
             case 0:
                 exit(0);
@@ -181,4 +185,11 @@ void tann(){
     scanf("%lf",&e);
     double t= tan(e);
     printf("the answer for tan is %lf\n",t);
+}
+void logarithm(){
+    double e;
+    printf("Enter the number for Log operation: ");
+    scanf("%lf",&e);
+    double t= log(e);
+    printf("the answer for log is %lf\n",t);
 }
