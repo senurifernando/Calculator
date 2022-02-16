@@ -181,5 +181,4 @@ void tann(){
     scanf("%lf",&e);
     double t= tan(e);
     printf("the answer for tan is %lf\n",t);
-
 }
