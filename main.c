@@ -14,9 +14,12 @@ void power();
 void square();
 void cube();
 void squareroot();
+void sine();
+void coss();
+void tann();
 //int func(int,int,char);
 int main() {
-    printf("Welcome to my first scientific calculator\n");
+    printf("\t\tWelcome to my first scientific calculator\n");
     int choice;
     printf("\n****press 0 to exit the system****\n");
     printf("Enter 1 for addition\n");
@@ -29,6 +32,9 @@ int main() {
     printf("Enter 8 for square\n");
     printf("Enter 9 for cube\n");
     printf("Enter 10 for squareroot\n");
+    printf("Enter 11 for Sin\n");
+    printf("Enter 12 for Cos\n");
+    printf("Enter 13 for Tan\n");
     while(1){
         printf("Enter the operation you want to do:\n");
 
@@ -64,10 +70,19 @@ int main() {
             case 10:
                 squareroot();
                 break;
+            case 11:
+                sine();
+                break;
+            case 12:
+                coss();
+                break;
+            case 13:
+                tann();
+                break;
             case 0:
                 exit(0);
             default:
-                printf("\n***** %s *****\n");
+                printf("\n***** %s enter a valid operation *****\n");
         }
     }
     return 0;
@@ -145,4 +160,26 @@ void squareroot(){
     scanf("%lf",&b);
     double s=sqrt(b);
     printf("the square root of %lf is %lf\n",b,s);
+}
+void sine(){
+    double d;
+    printf("Enter the number for Sin operation: ");
+    scanf("%lf",&d);
+    double s=sin(d);
+    printf("the answer for sin is %lf\n",s);
+}
+void coss(){
+    double c;
+    printf("Enter the number for Cos operation: ");
+    scanf("%lf",&c);
+    double e= cos(c);
+    printf("the answer for Cos is %lf\n",e);
+}
+void tann(){
+    double e;
+    printf("Enter the number for Tan operation: ");
+    scanf("%lf",&e);
+    double t= tan(e);
+    printf("the answer for tan is %lf\n",t);
+
 }
